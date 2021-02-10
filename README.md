@@ -5,6 +5,7 @@
 
 ```vhdl
 
-
+git status
+gut hub
 
 ```
