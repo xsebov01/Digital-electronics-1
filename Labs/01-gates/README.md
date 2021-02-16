@@ -2,17 +2,8 @@
 ## Lab 1
 
 **Môj github link:** https://github.com/xsebov01/Digital-electronics-1 
+### Dôkaz DeMorganových pravidiel
 
-**Source code**
-
-```vhdl
-
-git status
-gut hub
-fnand_o <= a_i;
-fand_o <= a_i and b_i;
-fxor_o <= a_i xor b_i;
-```
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 |  |
@@ -25,3 +16,13 @@ fxor_o <= a_i xor b_i;
 | 1 | 1 | 1 |  |
 
 
+**Source code**
+
+```vhdl
+
+git status
+gut hub
+fnand_o <= a_i;
+fand_o <= a_i and b_i;
+fxor_o <= a_i xor b_i;
+```
