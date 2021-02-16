@@ -36,3 +36,4 @@ end architecture dataflow;
 
 ### 2) Dôkaz distributívnych pravidiel
 
+Eda playground link: 
