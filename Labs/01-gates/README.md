@@ -31,7 +31,7 @@ end architecture dataflow;
 ```
 **Screenshot**
 
-(Digital-electronics-1/Labs/01-gates/images/demorgans.png)
+![Equations](images/demorgans.png)
 
 ### 2) Dôkaz distributívnych pravidiel
 
