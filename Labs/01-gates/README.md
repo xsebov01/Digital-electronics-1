@@ -4,7 +4,7 @@
 Môj github link: https://github.com/xsebov01/Digital-electronics-1 
 
 ### 2) Dôkaz DeMorganových pravidiel
-Eda playground link:
+Eda playground link: https://www.edaplayground.com/x/iULD
 
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
