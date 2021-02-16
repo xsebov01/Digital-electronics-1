@@ -1,9 +1,10 @@
 # Digital-electronics-1
 ## Lab 1
+### 1)
+** Môj github link:** https://github.com/xsebov01/Digital-electronics-1 
 
-**Môj github link:** https://github.com/xsebov01/Digital-electronics-1 
-### Dôkaz DeMorganových pravidiel
-
+### 2) Dôkaz DeMorganových pravidiel
+** Eda playground link:** 
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 | 1 |
