@@ -36,4 +36,20 @@ end architecture dataflow;
 
 ### 2) Dôkaz distributívnych pravidiel
 
-Eda playground link: 
+Eda playground link: https://www.edaplayground.com/x/BAAq
+
+**Source code**
+
+```vhdl
+architecture dataflow of gates is
+begin
+    f11_o     <= ((a_i and b_i) or (a_i and c_i));
+    f12_o     <= (a_i and (b_i or c_i));
+    f21_o     <= ((a_i or b_i) and (a_i or c_i));
+    f22_o     <= (a_i or (b_i and c_i));
+    
+end architecture dataflow;
+```
+**Screenshot**
+
+
