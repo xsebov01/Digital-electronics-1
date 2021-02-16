@@ -50,5 +50,5 @@ begin
 end architecture dataflow;
 ```
 **Screenshot**
-
+![Equations](images/distributives.png)
 
