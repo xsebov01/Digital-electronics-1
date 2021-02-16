@@ -4,7 +4,7 @@
 Môj github link: https://github.com/xsebov01/Digital-electronics-1 
 
 ### 2) Dôkaz DeMorganových pravidiel
-Eda playground link: https://www.edaplayground.com/x/iULD
+Eda playground link: https://www.edaplayground.com/x/G2BJ
 
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
@@ -29,3 +29,10 @@ begin
   
 end architecture dataflow;
 ```
+**Screenshot**
+
+
+
+
+### 2) Dôkaz distributívnych pravidiel
+
