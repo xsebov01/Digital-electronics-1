@@ -1,5 +1,7 @@
 # Digital-electronics-1
-## Labs
+## Lab 1
+
+**Môj github [link]:** (https://github.com/xsebov01/Digital-electronics-1) 
 
 **Source code**
 
