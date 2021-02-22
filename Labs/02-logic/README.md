@@ -19,3 +19,27 @@
 | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
+
+
+equals = v latexe
+less then = v latexe
+
+### 2)
+**Dvojbitový komparátor**
+Karnaughove mapy: 
+greater -> fotka
+equals -> fotka
+less -> fotka
+
+simplified SoP form of the "greater than" = v latexe
+simplified PoS form of the "less than" = v latexe
+
+Link na EDA playground: 
+
+### 3)
+**Štvorbitový komparátor**
+- design.vhd syntax
+- testbench.vhd sytanx
+- screenshot conzole s errorom
+Link na EDA playground:
+
