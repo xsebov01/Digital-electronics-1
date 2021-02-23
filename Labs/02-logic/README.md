@@ -26,14 +26,13 @@
 
 ### 2)
 **Dvojbitový komparátor**
-
+/Karnaughove mapy/
 ![Equations](images/2greater.png)
 ![Equations](images/2equal.png)
 ![Equations](images/2less.png)
 
-
-simplified SoP form of the "greater than" = 
-simplified PoS form of the "less than" =
+![Equations](images/2equal.png)
+![Equations](images/2less.png)
 
 Link na EDA playground: 
 
