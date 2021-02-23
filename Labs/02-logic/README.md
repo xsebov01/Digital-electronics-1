@@ -26,6 +26,7 @@
 
 ### 2)
 **Dvojbitový komparátor**
+
 Karnaughove mapy: 
 ***greater***
 ![Equations](images/2greater.png)
