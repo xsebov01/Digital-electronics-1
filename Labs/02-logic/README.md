@@ -119,5 +119,5 @@ Finding VCD file...
 Done
 ```
 
-Link na EDA playground:
+Link na EDA playground: https://www.edaplayground.com/x/atcJ
 
