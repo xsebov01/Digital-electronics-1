@@ -20,7 +20,9 @@
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
+![Equations](images/1equalSOP.png)
 
+![Equations](images/2lessPOS.png)
 less then = v latexe
 
 ### 2)
