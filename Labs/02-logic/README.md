@@ -34,12 +34,40 @@
 ![Equations](images/simplifiedPos.png)
 ![Equations](images/simplifiedSop.png)
 
-Link na EDA playground: 
+Link na EDA playground: https://www.edaplayground.com/x/Jr9j
 
 ### 3)
 **Štvorbitový komparátor**
-- design.vhd syntax
-- testbench.vhd sytanx
-- screenshot conzole s errorom
+**Súbor design.vhd**
+```vhdl
+architecture dataflow of gates is
+begin
+    f_o     <= (not b_i and a_i) or (not c_i and not b_i);
+   	fnand_o <= not (not (not b_i and a_i) and not(not b_i and not c_i));
+  	fnor_o  <= not (b_i or not a_i) or not (c_i or b_i);
+  
+end architecture dataflow;
+```
+**Súbor testbench.vhd**
+```vhdl
+architecture dataflow of gates is
+begin
+    f_o     <= (not b_i and a_i) or (not c_i and not b_i);
+   	fnand_o <= not (not (not b_i and a_i) and not(not b_i and not c_i));
+  	fnor_o  <= not (b_i or not a_i) or not (c_i or b_i);
+  
+end architecture dataflow;
+```
+**Výpis z konzole**
+```vhdl
+architecture dataflow of gates is
+begin
+    f_o     <= (not b_i and a_i) or (not c_i and not b_i);
+   	fnand_o <= not (not (not b_i and a_i) and not(not b_i and not c_i));
+  	fnor_o  <= not (b_i or not a_i) or not (c_i or b_i);
+  
+end architecture dataflow;
+```
+
 Link na EDA playground:
 
