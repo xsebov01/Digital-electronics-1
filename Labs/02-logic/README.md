@@ -24,13 +24,15 @@
 
 ![Equations](images/1lessPOS.png)
 
-
 ### 2)
 **Dvojbitový komparátor**
 Karnaughove mapy: 
-greater -> fotka
-equals -> fotka
-less -> fotka
+***greater***
+![Equations](images/1equalSOP.png)
+***equals***
+![Equations](images/1equalSOP.png)
+***less***
+![Equations](images/1equalSOP.png)
 
 simplified SoP form of the "greater than" = v latexe
 simplified PoS form of the "less than" = v latexe
