@@ -24,8 +24,7 @@
 
 ![Equations](images/1lessPOS.png)
 
-### 2)
-**Dvojbitový komparátor**
+### 2) Dvojbitový komparátor
 ![Equations](images/2greater.png)
 ![Equations](images/2equal.png)
 ![Equations](images/2less.png)
@@ -36,8 +35,7 @@
 
 Link na EDA playground: https://www.edaplayground.com/x/Jr9j
 
-### 3)
-**Štvorbitový komparátor**
+### 3) Štvorbitový komparátor
 **Súbor design.vhd**
 ```vhdl
 architecture dataflow of gates is
