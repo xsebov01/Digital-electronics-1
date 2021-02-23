@@ -26,13 +26,13 @@
 
 ### 2)
 **Dvojbitový komparátor**
-/Karnaughove mapy/
 ![Equations](images/2greater.png)
 ![Equations](images/2equal.png)
 ![Equations](images/2less.png)
 
-![Equations](images/2equal.png)
-![Equations](images/2less.png)
+
+![Equations](images/simplifiedPos.png)
+![Equations](images/simplifiedSop.png)
 
 Link na EDA playground: 
 
