@@ -21,7 +21,17 @@
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
 
-equals = v latexe
+\begin{align}
+
+  equal{SoP}^{canon.} =&~
+    \left (\overline{b{1}}\cdot \overline{b{0}}\cdot \overline{a{1}}\cdot \overline{a{0}} \right )+
+    \left (\overline{b{1}}\cdot b{0}\cdot \overline{a{1}}\cdot a{0} \right )+
+    \left (b{1}\cdot \overline{b{0}}\cdot a{1}\cdot \overline{a{0}} \right )+
+    \left (b{1}\cdot b{0}\cdot a{1}\cdot a{0} \right )\
+
+
+\end{align}
+
 less then = v latexe
 
 ### 2)
