@@ -32,8 +32,8 @@
 ![Equations](images/2less.png)
 
 
-simplified SoP form of the "greater than" = v latexe
-simplified PoS form of the "less than" = v latexe
+simplified SoP form of the "greater than" = 
+simplified PoS form of the "less than" =
 
 Link na EDA playground: 
 
