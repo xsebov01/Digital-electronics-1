@@ -22,8 +22,8 @@
 
 ![Equations](images/1equalSOP.png)
 
-![Equations](images/2lessPOS.png)
-less then = v latexe
+![Equations](images/1lessPOS.png)
+
 
 ### 2)
 **Dvojbitový komparátor**
