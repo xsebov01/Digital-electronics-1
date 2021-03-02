@@ -1,6 +1,6 @@
 # Digital-electronics-1
 ## Lab 3
-### 1)
+### 1) Preparation tasks
 | **LED** | **Connection** | **Switch** | **Connection** | 
 | :-: | :-: | :-: | :-: |
 | LED0 | H17 | SW0 | J15 |
@@ -19,7 +19,7 @@
 | LED13 | V14 | SW13 | U12 |
 | LED14 | V12 | SW14 | U11 |
 | LED15 | V11 | SW15 | V10 |
-### 2)
+### 2) Two-bit wide 4-to-1 multiplexer
 **VHDL architecture from source file**
 ```vhdl
 architecture Behavioral of comparator_4bit is
@@ -43,7 +43,7 @@ end architecture Behavioral;
 **Screenshot with simulated time waveforms**
 ![Equations](images/simplifiedPos.png)
 
-### 3) 
-### **Vivado tutorial**
+### 3) Vivado tutorial
+
 
 
