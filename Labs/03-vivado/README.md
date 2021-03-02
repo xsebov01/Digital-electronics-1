@@ -44,6 +44,6 @@ end architecture Behavioral;
 ![Equations](images/simplifiedPos.png)
 
 ### 3) 
-**Vivado tutorial**
+### **Vivado tutorial**
 
 
