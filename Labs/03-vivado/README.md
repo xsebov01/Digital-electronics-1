@@ -19,3 +19,31 @@
 | LED13 | V14 | SW13 | U12 |
 | LED14 | V12 | SW14 | U11 |
 | LED15 | V11 | SW15 | V10 |
+### 2)
+**VHDL architecture from source file**
+```vhdl
+architecture Behavioral of comparator_4bit is
+begin
+    B_less_A_o     <= '1' when (b_i < a_i) else '0';
+    B_greater_A_o  <= '1' when (b_i > a_i) else '0';
+    B_equals_A_o   <= '1' when (b_i = a_i) else '0';
+
+end architecture Behavioral;
+```
+**VHDL stimulus process from testbench file**
+```vhdl
+architecture Behavioral of comparator_4bit is
+begin
+    B_less_A_o     <= '1' when (b_i < a_i) else '0';
+    B_greater_A_o  <= '1' when (b_i > a_i) else '0';
+    B_equals_A_o   <= '1' when (b_i = a_i) else '0';
+
+end architecture Behavioral;
+```
+**Screenshot with simulated time waveforms**
+![Equations](images/simplifiedPos.png)
+
+### 3) 
+**Vivado tutorial**
+
+
