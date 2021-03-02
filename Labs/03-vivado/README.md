@@ -22,28 +22,65 @@
 ### 2) Two-bit wide 4-to-1 multiplexer
 **VHDL architecture from source file**
 ```vhdl
-architecture Behavioral of comparator_4bit is
+architecture Behavioral of mux_2bit_4to1 is
 begin
-    B_less_A_o     <= '1' when (b_i < a_i) else '0';
-    B_greater_A_o  <= '1' when (b_i > a_i) else '0';
-    B_equals_A_o   <= '1' when (b_i = a_i) else '0';
-
+    f_o <= a_i when (sel_i = "00") else
+           b_i when (sel_i = "01") else
+           c_i when (sel_i = "10") else
+           d_i;
 end architecture Behavioral;
 ```
 **VHDL stimulus process from testbench file**
 ```vhdl
-architecture Behavioral of comparator_4bit is
-begin
-    B_less_A_o     <= '1' when (b_i < a_i) else '0';
-    B_greater_A_o  <= '1' when (b_i > a_i) else '0';
-    B_equals_A_o   <= '1' when (b_i = a_i) else '0';
+   p_stimulus : process
+    begin
+        -- Report a note at the begining of stimulus process
+        report "Stimulus process started" severity note;
 
-end architecture Behavioral;
+        s_d     <= "00"; s_c <= "00"; s_b <= "00"; s_a <= "00"; 
+        s_sel   <= "00"; wait for 50 ns;
+        
+        s_a     <= "01"; wait for 50 ns;
+        s_b     <= "01"; wait for 50 ns;
+        
+        s_sel   <= "01"; wait for 50 ns;
+        s_c     <= "00"; wait for 50 ns;
+        s_b     <= "11"; wait for 50 ns;
+        
+        s_d     <= "10"; s_c <= "11"; s_b <= "01"; s_a <= "00"; 
+        s_sel   <= "10"; wait for 50 ns;
+        
+        s_d     <= "00"; s_c <= "00"; s_b <= "00"; s_a <= "01"; 
+        s_sel   <= "10"; wait for 50 ns;
+        
+        s_d     <= "10"; s_c <= "11"; s_b <= "01"; s_a <= "00";
+        s_sel   <= "11"; wait for 50 ns;
+       
+
+        -- Report a note at the end of stimulus process
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
 ```
 **Screenshot with simulated time waveforms**
-![Simulation](images/simplifiedPos.png)
-
+![Simulation](images/simulation.png)
 ### 3) Vivado tutorial
-
+![Tutorial](images/img1.png)
+![Tutorial](images/img2.png)
+![Tutorial](images/img3.png)
+![Tutorial](images/img4.png)
+![Tutorial](images/img5.png)
+![Tutorial](images/img6.png)
+![Tutorial](images/img7.png)
+![Tutorial](images/img8.png)
+![Tutorial](images/img9.png)
+![Tutorial](images/img10.png)
+![Tutorial](images/img11.png)
+![Tutorial](images/img12.png)
+![Tutorial](images/img13.png)
+![Tutorial](images/img14.png)
+![Tutorial](images/img15.png)
+![Tutorial](images/img16.png)
+![Tutorial](images/img17.png)
 
 
