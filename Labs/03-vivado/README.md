@@ -41,7 +41,7 @@ begin
 end architecture Behavioral;
 ```
 **Screenshot with simulated time waveforms**
-![Equations](images/simplifiedPos.png)
+![Simulation](images/simplifiedPos.png)
 
 ### 3) Vivado tutorial
 
