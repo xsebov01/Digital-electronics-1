@@ -207,6 +207,8 @@ end architecture Behavioral;
 | d | 1101 |  |  |  |  |
 | E | 1110 |  |  |  |  |
 | F | 1111 |  |  |  |  |
+
+
 **VHDL code for LEDs(7:4)**
 ```vhdl
 architecture Behavioral of mux_2bit_4to1 is
