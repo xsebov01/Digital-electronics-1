@@ -39,3 +39,69 @@
 | CG | L18 | 
 | DP | H15 |
 
+### 2) Seven-segment display decoder
+**VHDL architecture from source file hex_7seg.vhd**
+```vhdl
+architecture Behavioral of mux_2bit_4to1 is
+begin
+    f_o <= a_i when (sel_i = "00") else
+           b_i when (sel_i = "01") else
+           c_i when (sel_i = "10") else
+           d_i;
+end architecture Behavioral;
+```
+**VHDL stimulus process from testbench file tb_hex_7seg.vhd**
+```vhdl
+architecture Behavioral of mux_2bit_4to1 is
+begin
+    f_o <= a_i when (sel_i = "00") else
+           b_i when (sel_i = "01") else
+           c_i when (sel_i = "10") else
+           d_i;
+end architecture Behavioral;
+```
+
+**Screenshot with simulated time waveforms**
+![Simulation](images/simulation.png)
+
+**VHDL code from source file top.vhd**
+```vhdl
+architecture Behavioral of mux_2bit_4to1 is
+begin
+    f_o <= a_i when (sel_i = "00") else
+           b_i when (sel_i = "01") else
+           c_i when (sel_i = "10") else
+           d_i;
+end architecture Behavioral;
+```
+### 3) LED(7:4) indicators
+
+| **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0000 |  |  |  |  |
+| 1 | 0001 |  |  |  |  |
+| 2 |      |  |  |  |  |
+| 3 |      |  |  |  |  |
+| 4 |      |  |  |  |  |
+| 5 |      |  |  |  |  |
+| 6 |      |  |  |  |  |
+| 7 |      |  |  |  |  |
+| 8 | 1000 |  |  |  |  |
+| 9 |      |  |  |  |  |
+| A |      |  |  |  |  |
+| b |      |  |  |  |  |
+| C |      |  |  |  |  |
+| d |      |  |  |  |  |
+| E | 1110 |  |  |  |  |
+| F | 1111 |  |  |  |  |
+
+**Screenshot with simulated time waveforms**
+![Simulation](images/simulation.png)
+
+
+
+
+
+
+
+
