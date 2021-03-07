@@ -193,27 +193,39 @@ end architecture Behavioral;
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 |  |  |  |  |
 | 1 | 0001 |  |  |  |  |
-| 2 |      |  |  |  |  |
-| 3 |      |  |  |  |  |
-| 4 |      |  |  |  |  |
-| 5 |      |  |  |  |  |
-| 6 |      |  |  |  |  |
-| 7 |      |  |  |  |  |
+| 2 | 0010 |  |  |  |  |
+| 3 | 0011 |  |  |  |  |
+| 4 | 0100 |  |  |  |  |
+| 5 | 0101 |  |  |  |  |
+| 6 | 0110 |  |  |  |  |
+| 7 | 0111 |  |  |  |  |
 | 8 | 1000 |  |  |  |  |
-| 9 |      |  |  |  |  |
-| A |      |  |  |  |  |
-| b |      |  |  |  |  |
-| C |      |  |  |  |  |
-| d |      |  |  |  |  |
+| 9 | 1001 |  |  |  |  |
+| A | 1010 |  |  |  |  |
+| b | 1011 |  |  |  |  |
+| C | 1100 |  |  |  |  |
+| d | 1101 |  |  |  |  |
 | E | 1110 |  |  |  |  |
 | F | 1111 |  |  |  |  |
+**VHDL code for LEDs(7:4)**
+```vhdl
+architecture Behavioral of mux_2bit_4to1 is
+begin
+    f_o <= a_i when (sel_i = "00") else
+           b_i when (sel_i = "01") else
+           c_i when (sel_i = "10") else
+           d_i;
+end architecture Behavioral;
+```
 
 **Screenshot with simulated time waveforms**
-![Simulation](images/simulation.png)
+![Simulation](images/simulation1.png)
 
 
 
-
+   LED(5)  <= '1' when (SW > "1001") else '0';
+   LED(6) <= '1' when (SW = "0001" or SW = "0011" or SW = "0101" or SW = "0111" or SW = "1001" or SW = "1011" or SW = "1101" or SW = "1111") else '0';
+   LED(7)  <= '1' when (SW = "0001" or SW = "0010" or SW = "0100" or SW = "1000") else '0';
 
 
 
