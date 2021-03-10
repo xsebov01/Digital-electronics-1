@@ -17,3 +17,23 @@
    |  |  |  |  |
    |  |  |  |  |
    |  |  |  |  |
+   
+### 2) Bidirectional counter
+**VHDL code of the process p_cnt_up_down**
+```vhdl
+
+```
+**VHDL reset and stimulus processes from testbench file tb_cnt_up_down.vhd**
+```vhdl
+
+```
+**Screenshot with simulated time waveforms**
+![Simulation](images/simulation.png)
+
+### 3) Top level
+**VHDL code from source file top.vhd with all instantiations for the 4-bit bidirectional counter**
+```vhdl
+
+```
+**Image of the top layer including both counters**
+![TopLayer](images/toplayer.png)
