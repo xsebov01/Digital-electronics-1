@@ -132,4 +132,4 @@
         );
 ```
 **Image of the top layer including both counters**
-![TopLayer](images/toplayer.png)
+![TopLayer](images/4and16bitcounter.png)
