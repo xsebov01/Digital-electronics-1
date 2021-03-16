@@ -12,11 +12,11 @@
    
    | **Button name** | **Connection** | **Logic/voltage value while pressed** | **Logic/voltage value while not pressed** |
    | :-: | :-: | :-: | :-: |
-   |  |  |  |  |
-   |  |  |  |  |
-   |  |  |  |  |
-   |  |  |  |  |
-   |  |  |  |  |
+   | BTNL | P17 | 3.3V |  |
+   | BTNR | M17 |  |  |
+   | BTNU | M18 |  |  |
+   | BTND | P18 |  |  |
+   | BTNC | N17 |  |  |
    
 ### 2) Bidirectional counter
 **VHDL code of the process p_cnt_up_down**
