@@ -90,36 +90,6 @@
 ### 3) Top level
 **VHDL code from source file top.vhd with all instantiations for the 4-bit bidirectional counter**
 ```vhdl
-entity top is
-    Port 
-    ( 
-        CLK100MHZ   : in    STD_LOGIC;
-        BTNC        : in    STD_LOGIC;
-        SW          : in    STD_LOGIC_VECTOR (1 - 1 downto 0);
-        LED         : out   STD_LOGIC_VECTOR (4 - 1 downto 0);
-        CA          : out   STD_LOGIC;
-        CB          : out   STD_LOGIC;
-        CC          : out   STD_LOGIC;
-        CD          : out   STD_LOGIC;
-        CE          : out   STD_LOGIC;
-        CF          : out   STD_LOGIC;
-        CG          : out   STD_LOGIC;
-        AN          : out   STD_LOGIC_VECTOR (8 - 1 downto 0)
-    );
-end top;
-
-------------------------------------------------------------------------
--- Architecture body for top level
-------------------------------------------------------------------------
-architecture Behavioral of top is
-
-    -- Internal clock enable
-    signal s_en  : std_logic;
-    -- Internal counter
-    signal s_cnt : std_logic_vector(4 - 1 downto 0);
-
-begin
-
     --------------------------------------------------------------------
     -- Instance (copy) of clock_enable entity
     clk_en0 : entity work.clock_enable
@@ -160,11 +130,6 @@ begin
             seg_o(1) => CF,
             seg_o(0) => CG
         );
-
-    -- Connect one common anode to 3.3V
-    AN <= b"1111_1110";
-
-end architecture Behavioral;
 ```
 **Image of the top layer including both counters**
 ![TopLayer](images/toplayer.png)
