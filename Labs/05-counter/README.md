@@ -45,35 +45,6 @@
 ```
 **VHDL reset and stimulus processes from testbench file tb_cnt_up_down.vhd**
 ```vhdl
-begin
-    -- Connecting testbench signals with cnt_up_down entity
-    -- (Unit Under Test)
-    uut_cnt : entity work.cnt_up_down
-        generic map(
-            g_CNT_WIDTH  => c_CNT_WIDTH
-        )
-        port map(
-            clk      => s_clk_100MHz,
-            reset    => s_reset,
-            en_i     => s_en,
-            cnt_up_i => s_cnt_up,
-            cnt_o    => s_cnt
-        );
-
-    --------------------------------------------------------------------
-    -- Clock generation process
-    --------------------------------------------------------------------
-    p_clk_gen : process
-    begin
-        while now < 750 ns loop         -- 75 periods of 100MHz clock
-            s_clk_100MHz <= '0';
-            wait for c_CLK_100MHZ_PERIOD / 2;
-            s_clk_100MHz <= '1';
-            wait for c_CLK_100MHZ_PERIOD / 2;
-        end loop;
-        wait;
-    end process p_clk_gen;
-
     --------------------------------------------------------------------
     -- Reset generation process
     --------------------------------------------------------------------
@@ -112,8 +83,6 @@ begin
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
-
-end architecture testbench;
 ```
 **Screenshot with simulated time waveforms**
 ![Simulation](images/simulation.png)
