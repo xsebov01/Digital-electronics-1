@@ -1,5 +1,5 @@
 # Digital-electronics-1
-## Lab 4
+## Lab 5
 ### 1) Preparation tasks
    | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
    | :-: | :-: | :-: | :-: |
