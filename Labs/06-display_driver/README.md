@@ -1,5 +1,5 @@
 # Digital-electronics-1
-## Lab 5
+## Lab 6
 ### 1) Preparation tasks
 **Timing diagram figure for displaying value 3.142**
 ![Simulation](images/diagram.png)
