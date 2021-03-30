@@ -2,6 +2,11 @@
 ## Lab 7
 ### 1) Preparation tasks
 **Characteristic equations and completed tables for D, JK, T flip-flops**
+
+
+
+
+
 ![equations](images/equations.png)
 
  | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
