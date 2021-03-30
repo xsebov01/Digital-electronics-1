@@ -193,6 +193,8 @@ p_jk_ff_rst : process (clk)
                 end if;
             end if;
         end if;
+        q       <= s_q;
+        q_bar   <= not s_q;
     end process p_jk_ff_rst;
 ```
 **VHDL code listing of the process p_d_ff_rst**
