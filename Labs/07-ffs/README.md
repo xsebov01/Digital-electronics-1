@@ -585,7 +585,7 @@ p_jk_ff_rst : process (clk)
 ```
 **Screenshot with simulated time waveforms of d_ff_arst**
 ![Simulation](images/simulation2.png)
-**Screenshot with simulated time waveforms of jk_ff_rst (v tejto simulácii sa nachádza v signáloch s_q a s_q_bar chyba ktorú som bohužial v testbenchi nenašla)**
+**Screenshot with simulated time waveforms of jk_ff_rst**
 ![Simulation](images/simulation3.png)
 **Screenshot with simulated time waveforms of d_ff_rst**
 ![Simulation](images/simulation4.png)
