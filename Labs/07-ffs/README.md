@@ -157,18 +157,56 @@
 ![Simulation](images/simulation.png)
 
 ### 3) Flip-flops
-**VHDL code listing of the processes p_d_ff_arst, p_d_ff_rst, p_jk_ff_rst, p_t_ff_rst**
+**VHDL code listing of the process p_d_ff_arst**
+```vhdl
+ p_d_ff_arst : process (clk, arst)                    
+   begin                                             
+       if (arst = '1') then                          
+           q     <= '0';                                 
+           q_bar <= '1';                             
+       elsif rising_edge(clk) then                        
+           q     <= d;                                   
+           q_bar <= not d;                            
+       end if;                                       
+  end process p_d_ff_arst;
+```
+**VHDL code listing of the process p_d_ff_rst**
+```vhdl
+
+```
+**VHDL code listing of the process p_jk_ff_rst**
+```vhdl
+
+```
+**VHDL code listing of the process p_t_ff_rst**
 ```vhdl
 
 ```
 
-**Listing of VHDL clock, reset and stimulus processes from the testbench files**
+**Listing of VHDL clock, reset and stimulus processes from the testbench of d_ff_arst**
 ```vhdl
 
 ```
+**Listing of VHDL clock, reset and stimulus processes from the testbench of d_ff_rst**
+```vhdl
 
-**Screenshot with simulated time waveforms**
+```
+**Listing of VHDL clock, reset and stimulus processes from the testbench of jk_ff_rst**
+```vhdl
+
+```
+**Listing of VHDL clock, reset and stimulus processes from the testbench of t_ff_rst**
+```vhdl
+
+```
+**Screenshot with simulated time waveforms of d_ff_arst**
 ![Simulation](images/simulation2.png)
+**Screenshot with simulated time waveforms of d_ff_rst**
+![Simulation](images/simulation3.png)
+**Screenshot with simulated time waveforms of jk_ff_rst**
+![Simulation](images/simulation4.png)
+**Screenshot with simulated time waveforms of t_ff_rst**
+![Simulation](images/simulation5.png)
 
 ### 4) Shift register
 ![schematic](images/schematic.png)
