@@ -152,6 +152,14 @@ p_output_fsm : process(s_state)
 ### 3) Smart controller
 **State table**
 
+
+
+
+
+
+
+
+
 | **Current state** | **Direction South** | **Direction West** | **Delay** | **None car** | **West car** | **South car** | **Both cars** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | GO_SOUTH | green | red | 3 sec | GO_SOUTH | WAIT_SOUTH | GO_SOUTH | WAIT_SOUTH |
