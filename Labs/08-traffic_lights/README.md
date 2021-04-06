@@ -155,14 +155,78 @@ p_output_fsm : process(s_state)
 | **Current state** | **Direction South** | **Direction West** | **Delay** | **None car** | **West car** | **South car** | **Both cars** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | GO_SOUTH | green | red | 3 sec | GO_SOUTH | WAIT_SOUTH | GO_SOUTH | WAIT_SOUTH |
-| WAIT_SOUTH | yellow | red | 3 sec | GO_WEST | GO_WEST | GO_WEST | GO_WEST |
+| WAIT_SOUTH | yellow | red | 1 sec | GO_WEST | GO_WEST | GO_WEST | GO_WEST |
 | GO_WEST | red | green | 3 sec | GO_WEST | GO_WEST | WAIT_WEST | WAIT_WEST |
-| WAIT_WEST | red | yellow | 3 sec | GO_SOUTH | GO_SOUTH | GO_SOUTH | GO_SOUTH |
+| WAIT_WEST | red | yellow | 1 sec | GO_SOUTH | GO_SOUTH | GO_SOUTH | GO_SOUTH |
 
 **State diagram**
 ![state](images/diagram2.png)
 
 **Listing of VHDL code of sequential process p_smart_traffic_fsm**
 ```vhdl
-
+    p_smart_traffic_fsm : process(clk)
+    begin
+        if rising_edge(clk) then
+            if (reset = '1') then       -- Synchronous reset
+                s_state <= GO_SOUTH ;   -- Set initial state
+                s_cnt   <= c_ZERO;      -- Clear all bits
+    
+            elsif (s_en = '1') then
+                -- Every 250 ms, CASE checks the value of the s_state 
+                -- variable and changes to the next state according 
+                -- to the delay value.
+                case s_state is
+    
+                    when GO_SOUTH =>
+                        if (s_cnt < c_DELAY_4SEC) then
+                            s_cnt <= s_cnt + 1;
+                        elsif (west_i = '1') then
+                            -- Move to the next state
+                            s_state <= WAIT_SOUTH;
+                            -- Reset local counter value
+                            s_cnt   <= c_ZERO;
+                        end if;
+    
+                    when WAIT_SOUTH =>
+                        -- WRITE YOUR CODE HERE
+                        if (s_cnt < c_DELAY_1SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            -- Move to the next state
+                            s_state <= GO_WEST;
+                            -- Reset local counter value
+                            s_cnt   <= c_ZERO;
+                        end if;
+                    
+                    when GO_WEST =>
+                        if (s_cnt < c_DELAY_4SEC) then
+                            s_cnt <= s_cnt + 1;
+                        elsif (south_i = '1') then
+                            -- Move to the next state
+                            s_state <= WAIT_WEST;
+                            -- Reset local counter value
+                            s_cnt   <= c_ZERO;
+                        end if;
+                        
+                    when WAIT_WEST =>
+                        -- WRITE YOUR CODE HERE
+                        if (s_cnt < c_DELAY_1SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            -- Move to the next state
+                            s_state <= GO_SOUTH;
+                            -- Reset local counter value
+                            s_cnt   <= c_ZERO;
+                        end if;
+                        
+                    -- It is a good programming practice to use the 
+                    -- OTHERS clause, even if all CASE choices have 
+                    -- been made. 
+                    when others =>
+                        s_state <= GO_SOUTH;
+    
+                end case;
+            end if; -- Synchronous reset
+        end if; -- Rising edge
+    end process p_smart_traffic_fsm;
 ```
