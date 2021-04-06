@@ -150,17 +150,15 @@ p_output_fsm : process(s_state)
 ![simulation](images/sim2.png)
 
 ### 3) Smart controller
-**State diagram**
-![state](images/diagram2.png)
-
 **State table**
-
 | **Current state** | **Direction South** | **Direction West** | **Delay** | **None car** | **West car** | **South car** | **Both cars** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | GO_SOUTH | green | red | 3 sec | GO_SOUTH | WAIT_SOUTH | GO_SOUTH | WAIT_SOUTH |
 | WAIT_SOUTH | yellow | red | 1 sec | GO_WEST | GO_WEST | GO_WEST | GO_WEST |
 | GO_WEST | red | green | 3 sec | GO_WEST | GO_WEST | WAIT_WEST | WAIT_WEST |
 | WAIT_WEST | red | yellow | 1 sec | GO_SOUTH | GO_SOUTH | GO_SOUTH | GO_SOUTH |
+**State diagram**
+![state](images/diagram2.png)
 
 **Listing of VHDL code of sequential process p_smart_traffic_fsm**
 ```vhdl
